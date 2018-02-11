@@ -39,11 +39,14 @@ public class Main {
         baseStation.setOrderVitesse(orderVitesse);
 
 
-        while(!baseStation.sendOrder(droneAtltitude, orderAlttitude, "ALT")
-                && !baseStation.sendOrder(droneDestination, orderDestination, "DST")){
-            droneAtltitude = baseStation.getDroneAtltitude();
-            droneDestination = baseStation.getDroneDestination();
+/*
+        for (int i = 0; i < 12; i++) {
+            char c = (char) in.read();
+            String s = Integer.toHexString(c).toUpperCase();
+            String I = "0x"+(s.length() == 1?"0":"")+ s +":";
+            System.out.println(I);
         }
 
+        */
     }
 }
